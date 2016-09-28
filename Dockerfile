@@ -13,7 +13,7 @@ RUN mkdir /opt && \
 
 RUN adduser -u ${KIBANA_UID} -D kibana -s /bin/bash
 RUN cp /root/.bashrc /home/kibana && \
-  chown -R ${LOGSTASH_UID}:${LOGSTASH_UID} /home/kibana
+  chown -R ${KIBANA_UID}:${KIBANA_UID} /home/kibana
 
 USER kibana
 WORKDIR /home/kibana
