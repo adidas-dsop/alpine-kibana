@@ -1,6 +1,6 @@
 FROM dsop/alpine-nodejs
 
-ENV KIBANA_VERSION 5.2.2-linux-x86_64
+ENV KIBANA_VERSION 5.1.1-linux-x86_64
 ENV KIBANA_UID 1000
 
 RUN mkdir /opt && \
